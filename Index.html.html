@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>MYFORM</title>
+    <style>
+
+        fieldset{
+            border: 3px solid rgba(0, 0, 0, 0.219); width: 300px; height: 250px;
+            border-radius: 10px;
+        }
+
+        body{
+            align-items: center;
+            align-content: center;
+            padding-left: 600px;
+            background-color: rgb(241, 185, 102);
+            background-image: url(wallpaperflare.com_wallpaper\ \(1\).jpg);
+
+        }
+        label{
+            font-family: cursive;
+            color: rgb(12, 0, 40);
+            
+        }
+        legend{
+            font-size: x-large;
+        }
+        #Three:hover{
+            text-align: center;
+            color: brown;
+            background-color: red;
+
+        }
+    </style>
+</head>
+<body>
+        <form action="userMessage.html">
+    
+        <fieldset><legend>Personal Details</legend>
+        <br>
+        <label for="Fname">FirstName</label>
+        <input type="text" required name="fname" id="fname" pattern="[A-Za-z]{3,7}">
+        <br><br>
+        <label for="Lname">LastName</label>
+        <input type="text" required name="lname" id="lname" pattern="[A-Za-z]{3,7}">
+        <br><br>
+        <label for="Email">Email</label>
+        <input type="email" required name="email" id="email">
+        <br><br>
+        <label for="Dateofbirth">DOB</label>
+        <input type="date">
+        <br><br></fieldset>
+
+<br>
+        <fieldset><legend>Educational details</legend>
+        <label for="Dept">Department</label>
+        <br><br>
+        <label for="">CSE</label>
+        <input type="radio" id="cse" name="Dept">
+        <label for="">E&C</label>
+        <input type="radio" id="E&C" name="Dept">
+        <label for="">EEE</label>
+        <input type="radio" id="EEE" name="Dept">
+        <label for="">AIML</label>
+        <input type="radio" id="aiml" name="Dept">
+        <br><br>
+        <label for="yop">Year Of Graduation</label>
+
+        <input list="yog" id="yop" name="yop">
+        <datalist id="yog">
+            <option>2019</option>
+
+            <option>2020</option>
+
+            <option>2021</option>
+
+            <option>2022</option>
+
+            <option>2023</option>
+
+        </datalist>
+        <br>
+        <br>
+
+        <label for="">SKILLS</label>
+        <br>
+        <input type="checkbox" id="JAVA" name="java" >
+        <label for="">JAVA</label> 
+        <input type="checkbox" id="mysql" name="java" >
+        <label for="">MYSQL</label>
+        <input type="checkbox" id="html" name="java" >
+        <label for="">HTML</label>
+        <input type="checkbox" id="css" name="java" >
+        <label for="">CSS</label>
+        <input type="checkbox" id="oops" name="java" >
+        <label for="">OOPS</label>
+        </fieldset>
+        <br>
+        <input type="submit" id="Three" name="submit">
+
+</form>    
+</body>
+</html>
